@@ -27,16 +27,14 @@ body {
   width: 100%;
 }
 
-footer > a,
 footer img {
-  margin-top: 0.3rem;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 main {
   max-width: 81.25rem;
   min-width: 25rem;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem 3rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -53,6 +51,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer li {
+  cursor: pointer;
 }
 
 nav {
@@ -244,14 +246,64 @@ button:nth-child(2) > img {
 
 /* LIST */
 
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .list__item-wrapper {
   display: flex;
   justify-content: space-between;
   border-radius: 1rem;
   background-color: var(--bg-unactive);
-  height: 1800px;
+  width: 100%;
+  padding: 1.5rem;
 }
 
 .list__coin-wrapper {
   display: flex;
+  gap: 2rem;
+}
+
+.list__icon-wrapper {
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 1rem;
+}
+
+.list__icon-wrapper img {
+  height: 1.2rem;
+}
+
+.list__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.list__value {
+  align-self: center;
+  font-weight: 700;
+}
+
+.list__title-wrapper span:first-of-type {
+  font-weight: 700;
+}
+
+/* FOOTER */
+
+.footer__active-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.6rem 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 1.5rem;
+}
+
+.footer__active-button span {
+  font-weight: 500;
 }
