@@ -307,3 +307,22 @@ button:nth-child(2) > img {
 .footer__active-button span {
   font-weight: 500;
 }
+
+/* FLOATING BUTTON */
+.floating_button {
+  background-color: var(--bg-float);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  width: 4rem;
+  position: fixed;
+  bottom: 6.5rem;
+  right: 2rem;
+  box-shadow: 1px 1px 4px black;
+}
+
+.floating_button img {
+  height: 2rem;
+}
